@@ -12,14 +12,18 @@ def image_to_sound(path_to_image):
     try:
         loaded_image = Image.open(path_to_image)
         decoded_text = image_to_string(loaded_image)
-        cleaned_text = " ".join(decoded_text.split("\n"))
-        print(cleaned_text)
+        cleaned_text = " ".join(decoded_text.split("\n")).strip()
+        if not cleaned_text:
+            raise ValueError("No text found in the image")
+        print("Extracted text:", cleaned_text)
+        
+        output_file = "sound.mp3"
         sound = gTTS(cleaned_text, lang="en")
-        sound.save("sound.mp3")
-        return True
+        sound.save(output_file)
+        return output_file
     except Exception as bug:
-        print("The bug thrown while excuting the code\n", bug)
-        return
+        print("Error during processing:\n", bug)
+        raise bug
 
 
 if __name__ == "__main__":
