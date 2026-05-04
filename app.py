@@ -1,6 +1,8 @@
 from PIL import Image
 from gtts import gTTS
 from pytesseract import image_to_string
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 
 def image_to_sound(path_to_image):
