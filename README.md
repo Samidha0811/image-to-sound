@@ -45,6 +45,14 @@ Explore it
 -----------
 Now keep explore it by testing it with various input picture to see what kinda of sound it produces 
 
+## Screenshots
+
+<img src="Images/Screenshot%202026-05-05%20003031.png" alt="Screenshot 1" width="600"/>
+<br/>
+<img src="Images/Screenshot%202026-05-05%20003051.png" alt="Screenshot 2" width="600"/>
+<br/>
+<img src="Images/Screenshot%202026-05-05%20003108.png" alt="Screenshot 3" width="600"/>
+
 Give it a star 
 --------------
 Did you find this information useful, then give it a star 
